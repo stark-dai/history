@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>krakout-Be Made By Dai Kewei</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body,
+    html {
+      background-color: #292929;
+    }
+    canvas {
+      display: block;
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    canvas:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body onContextMenu="alert('禁止查看源代码，您的行为已记录。'); return false"
+  NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+  <canvas id="canvas"></canvas>
+  <script src="game.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
